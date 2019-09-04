@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--<properties resource="dev.properties"/>-->
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="mergeable" value="false"></property>
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/data_manage?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false&amp;serverTimezone=GMT&amp;rewriteBatchedStatements=true"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="${targetModelPackage}" targetProject="${targetJavaProject}"/>
+
+        <sqlMapGenerator targetPackage="${targetXMLPackage}" targetProject="${targetResourcesProject}"/>
+
+        <javaClientGenerator targetPackage="${targetMapperPackage}" targetProject="${targetJavaProject}"
+                             type="XMLMAPPER"/>
+
+        <!--<table tableName="base_user" domainObjectName="User" >-->
+        <!--<generatedKey column="id" identity="false" sqlStatement="myql"/>-->
+        <!--</table>-->
+        <!--<table tableName="base_menu" domainObjectName="Menu" >-->
+        <!--<generatedKey column="id" identity="false" sqlStatement="myql"/>-->
+        <!--</table>-->
+        <!--<table tableName="base_group" domainObjectName="Group" >
+            &lt;!&ndash;<generatedKey column="id" identity="true"/>&ndash;&gt;
+        </table>
+        <table tableName="base_group_type" domainObjectName="GroupType" >
+        </table>-->
+        <!--<table tableName="base_resource_authority" domainObjectName="ResourceAuthority" >
+        </table>-->
+        <!--<table tableName="base_element" domainObjectName="Element">-->
+        <!--</table>-->
+        <!--<table tableName="gate_client" domainObjectName="GateClient">-->
+        <!--</table>-->
+        <!--<table tableName="tb_lg_manage_cms_category" domainObjectName="Category"></table>-->
+        <!--<table tableName="tb_lg_manage_cms_article_log" domainObjectName="ArticleLog"></table>-->
+        <!--<table tableName="tb_lg_manage_cms_article" domainObjectName="Article"></table>-->
+        <!--<table tableName="tb_lg_manage_cms_category_log" domainObjectName="CategoryLog"></table>-->
+        <!--<table tableName="tb_lg_manage_dict" domainObjectName="Dict"></table>-->
+        <!--<table tableName="tb_lg_manage_dict_log" domainObjectName="DictLog"></table>-->
+        <!--<table tableName="sys_log" domainObjectName="SysLog"></table>-->
+        <!--  <table tableName="tb_lg_manage_family" domainObjectName="LgManageFamily"></table>-->
+        <!--<table tableName="tb_lg_manage_family_log" domainObjectName="FamilyLog"></table>-->
+        <!--<table tableName="tb_lg_manage_menu" domainObjectName="Menu"></table>-->
+        <!--<table tableName="tb_lg_manage_menu_log" domainObjectName="MenuLog"></table>-->
+        <!--<table tableName="tb_lg_manage_notice" domainObjectName="LgManageNotice"></table>-->
+        <!--<table tableName="tb_lg_manage_notice_log" domainObjectName="NoticeLog"></table>-->
+        <!--<table tableName="tb_lg_manage_notice_member" domainObjectName="NoticeMember"></table>-->
+        <!--<table tableName="tb_lg_manage_notice_member_log" domainObjectName="NoticeMemberLog"></table>-->
+        <!--<table tableName="tb_lg_manage_org" domainObjectName="LgManageOrg"></table>-->
+        <!--<table tableName="tb_lg_manage_org_log" domainObjectName="LgManageOrgLog"></table>-->
+        <!-- <table tableName="tb_lg_manage_retired" domainObjectName="LgManageRetired"></table>-->
+        <!--<table tableName="tb_lg_manage_retired_log" domainObjectName="RetiredLog"></table>-->
+        <!--<table tableName="tb_lg_manage_sms_receiver" domainObjectName="LgManageSmsReceiver"></table>-->
+        <!--<table tableName="tb_lg_manage_tip" domainObjectName="LgManageTip"></table>-->
+        <!--<table tableName="tb_lg_manage_tip_log" domainObjectName="LgManageTipLog"></table>-->
+        <!--<table tableName="tb_lg_manage_tip_read" domainObjectName="LgManageTipRead"></table>-->
+        <!--<table tableName="gzszf_department_list" domainObjectName="GzszfDepartmentList"></table>-->
+        <!--<table tableName="dyn_member_staff" domainObjectName="DynMemberStaff"></table>-->
+        <!--<table tableName="tb_lg_manage_role" domainObjectName="Role"></table>
+        <table tableName="tb_lg_manage_role_menu" domainObjectName="RoleMenu"></table>
+        <table tableName="tb_lg_manage_role_user" domainObjectName="RoleUser"></table>
+        <table tableName="tb_lg_manage_role_log" domainObjectName="RoleLog"></table>
+        <table tableName="tb_lg_manage_role_menu_log" domainObjectName="RoleMenuLog"></table>
+        <table tableName="tb_lg_manage_role_user_log" domainObjectName="RoleUserLog"></table>-->
+        <!--<table tableName="tb_lg_manage_role" domainObjectName="Role"></table>-->
+        <!--<table tableName="tb_lg_manage_menu" domainObjectName="Menu"></table>-->
+        <!--<table tableName="tb_lg_manage_menu_log" domainObjectName="MenuLog"></table>-->
+        <!--<table tableName="tb_lg_manage_cms_article" domainObjectName="Article"></table>-->
+        <!--<table tableName="tb_lg_manage_role" domainObjectName="Role"></table>-->
+        <!--<table tableName="tb_lg_manage_role_menu" domainObjectName="RoleMenu"></table>-->
+        <!--<table tableName="tb_lg_manage_role_user" domainObjectName="RoleUser"></table>-->
+        <!--<table tableName="tb_lg_manage_role_log" domainObjectName="RoleLog"></table>-->
+        <!--<table tableName="tb_lg_manage_role_menu_log" domainObjectName="RoleMenuLog"></table>-->
+        <!--<table tableName="tb_lg_manage_role_user_log" domainObjectName="RoleUserLog"></table>-->
+        <!--<table tableName="tb_lg_manage_menu" domainObjectName="Menu"></table>-->
+        <!--<table tableName="tb_lg_manage_menu_log" domainObjectName="MenuLog"></table>-->
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.gx.resmanage.configuration.Person",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    },
+    {
+      "name": "person.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.gx.resmanage.configuration.Dog",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    },
+    {
+      "name": "person.last-name",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    },
+    {
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.gx.resmanage.configuration.Person"
+    }
+  ],
+  "hints": []
+}
