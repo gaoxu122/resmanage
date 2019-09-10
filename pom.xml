@@ -17,11 +17,40 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>resmanage</name>
     <description>Demo project for Spring Boot</description>
+
+
+    <properties>
+        <!--<thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>-->
+        <!-- 布局功能的支持程序  thymeleaf3主程序  layout2以上版本 -->
+        <!-- thymeleaf2   layout1-->
+        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--  thymeleaf  配置 模板引擎-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!-- 引入jquery-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+        <!--引入bootStrp-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>4.3.1</version>
         </dependency>
 
         <dependency>
@@ -42,6 +71,7 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

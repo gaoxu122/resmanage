@@ -22,15 +22,16 @@ import java.util.Map;
  */
 
 @Component
-//@ConfigurationProperties(prefix = "person")
-@Validated
+@ConfigurationProperties(prefix = "person")
+@Validated  // 用于配置校验   比如下面的@Email
+
 public class Person {
 
-    @Value("${person.last-name}")
-    @Email
+    //    @Value("${person.last-name}")
+//    @Email
     private String lastName;
 
-    @Value("#{11*2}")
+    //    @Value("#{11*2}")
     private Integer age;
     private Boolean boss;
     private Date birth;
