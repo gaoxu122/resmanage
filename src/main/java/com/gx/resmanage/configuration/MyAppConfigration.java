@@ -3,6 +3,7 @@ package com.gx.resmanage.configuration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.LocaleResolver;
 
 /**
  * 配置类
@@ -21,5 +22,7 @@ public class MyAppConfigration {
 
         return null;
     }
+
+
 
 }
